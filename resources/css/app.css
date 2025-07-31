@@ -1,0 +1,43 @@
+.background{
+    display: flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('background.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+ 
+   
+}
+.form{
+text-align: center;
+display: flex;
+height: 500px;
+width: 300px;
+border: 1px solid #d6d6d6;
+background-color:white;
+padding: 20px;
+gap:5px ;
+
+flex-direction: column;
+text-align: center;
+margin: 20px;
+justify-content: center;
+min-height: 600px;
+position: relative;
+left: 720px;
+
+
+}
+
+.input[type="text"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .input[type="password"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+ 
