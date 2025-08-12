@@ -3,6 +3,10 @@
 @section('title', 'Login')
 
 @section('content')
+@section('styles')
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+@endsection
+
 <h2>Login</h2>
 
 <form method="POST" action="{{ route('login') }}">
