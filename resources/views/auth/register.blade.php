@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="background">
-  <div class="form">
-    <h2>Register</h2>
+ 
+   
 
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" class="form" action="{{ route('register') }}">
         @csrf
-
+         <h2>Register</h2>
         <label></label>
         <input type="text" name="username" placeholder="username" value="{{ old('username') }}" required>
         @error('username') <span>{{ $message }}</span> @enderror
@@ -30,9 +30,10 @@
         <input type="password" name="password_confirmation" placeholder="confirm password" required>
          <br>
         <button type="submit">Register</button>
+         <p>Already have an account? <a href="{{ route('login') }}">Login</a></p>
+ 
     </form>
 
-    <p>Already have an account? <a href="{{ route('login') }}">Login</a></p>
-  </div>
+   
 </div>
 @endsection

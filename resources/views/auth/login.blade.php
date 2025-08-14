@@ -4,13 +4,12 @@
 
 @section('content')
 <div class="background">
-  <div class="form">
 
-    <h2>Login</h2>
+    
 
-    <form method="POST" action="{{ route('login') }}">
+    <form method="POST" class="form" action="{{ route('login') }}">
         @csrf
-
+        <h2>Login</h2>
         <label></label>
         <input type="text" name="username" placeholder="username" value="{{ old('username') }}" required autofocus>
         @error('username') 
@@ -24,11 +23,12 @@
         @enderror
         <br>
         <button type="submit">Login</button>
-    </form>
-
-    <a href="{{ route('password.request') }}">Forgot password?</a>
+         <a href="{{ route('password.request') }}">Forgot password?</a>
     <p>Don't have an account? <a href="{{ route('register') }}">Register</a></p>
 
-  </div>
+    </form>
+
+   
+ 
 </div>
 @endsection
