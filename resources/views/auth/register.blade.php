@@ -28,7 +28,7 @@
 
         <label></label>
         <input type="password" name="password_confirmation" placeholder="confirm password" required>
-         <br>
+     
         <button type="submit">Register</button>
          <p>Already have an account? <a href="{{ route('login') }}">Login</a></p>
  

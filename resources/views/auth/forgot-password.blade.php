@@ -8,8 +8,8 @@
 @if(session('status'))
     <div>{{ session('status') }}</div>
 @endif
-
-<form method="POST" action="{{ route('password.email') }}">
+<div class="background">
+<form method="POST" class="form" action="{{ route('password.email') }}">
     @csrf
 
     <label>Email</label>
@@ -18,4 +18,5 @@
 
     <button type="submit">Send Password Reset Link</button>
 </form>
+</div>
 @endsection

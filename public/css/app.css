@@ -5,27 +5,24 @@
     background-attachment: fixed;
     background-image: url('public/assets/background.jpg');
     background-size:cover;
-   
- 
-   
-}
-.form{
+    justify-content: center;
 text-align: center;
+align-items: center;
+}
+
+.form{
 display: flex;
+flex-direction: column;
 height: 500px;
 width: 300px;
-border: 1px solid #d6d6d6;
+border: 1px solid #d6d6d6; border-radius: 15px;
 background-color:white;
 padding: 20px;
 gap:5px ;
-flex-direction: column;
-text-align: center;
 margin: 20px;
 justify-content: center;
-min-height: 600px;
-position: relative;
-left: 720px;
-
+text-align: center;
+align-items: center;
 
 }
 

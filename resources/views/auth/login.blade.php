@@ -21,9 +21,10 @@
         @error('password') 
             <span>{{ $message }}</span> 
         @enderror
-        <br>
+        <a href="{{ route('password.request') }}">Forgot password?</a>
+        
         <button type="submit">Login</button>
-         <a href="{{ route('password.request') }}">Forgot password?</a>
+         
     <p>Don't have an account? <a href="{{ route('register') }}">Register</a></p>
 
     </form>
