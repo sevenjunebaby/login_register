@@ -10,18 +10,22 @@
 
 
 <form class="form" method="POST" action="{{ route('logout') }}">
-    <h1>Welcome, {{ auth()->user()->name }}!</h1>
+    <h1>Welcome
+        <br> {{ auth()->user()->name }} ♡</h1>
+    
     <div {{ __('Dashboard') }}>
+        
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('') }}
                 </div>
     @csrf
-    <button type="submit">Logout</button>
+    <input type="image" src="/assets/images/home.png" alt="Logout" width="35" height="35">
+
 </form>
 
 </div>
