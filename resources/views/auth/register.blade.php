@@ -11,23 +11,24 @@
         @csrf
          <h2>Register</h2>
         <label></label>
-        <input type="text" name="username" placeholder="username" value="{{ old('username') }}" required>
-        @error('username') <span>{{ $message }}</span> @enderror
+        <input type="text" name="name" placeholder="Name" value="{{ old('name') }}" required>
+        @error('name') <span>{{ $message }}</span> @enderror
+
 
         <label></label>
-        <input type="email" name="email" placeholder="email" value="{{ old('email') }}" required>
+        <input type="email" name="email" placeholder="Email" value="{{ old('email') }}" required>
         @error('email') <span>{{ $message }}</span> @enderror
 
         <label></label>
-        <input type="text" name="phone" placeholder="phone" value="{{ old('phone') }}" required>
+        <input type="text" name="phone" placeholder="Phone" value="{{ old('phone') }}" required>
         @error('phone') <span>{{ $message }}</span> @enderror
 
         <label></label>
-        <input type="password" name="password" placeholder="password" required>
+        <input type="password" name="password" placeholder="Password" required>
         @error('password') <span>{{ $message }}</span> @enderror
 
         <label></label>
-        <input type="password" name="password_confirmation" placeholder="confirm password" required>
+        <input type="password" name="password_confirmation" placeholder="Confirm Password" required>
      
         <button type="submit">Register</button>
          <p>Already have an account? <a href="{{ route('login') }}">Login</a></p>
