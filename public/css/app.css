@@ -26,7 +26,7 @@ a{
     flex-direction: column;
     height: 500px;
     width: 300px;
-    border: 1px solid #d6d6d6;
+    border: 1px solid transparent;
     border-radius: 15px;
     padding: 20px;
     gap: 5px;
@@ -34,31 +34,37 @@ a{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(238, 127, 76, 0.103); 
     backdrop-filter: blur(5px); 
-    -webkit-backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px 8px rgba(238, 127, 76, 0.4);
 }
 
 
 input[type="text"] {
+     
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    box-shadow: 0 0 20px 8px rgba(238, 127, 76, 0.4);
   }
   input[type="password"] {
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    box-shadow: 0 0 20px 8px rgba(238, 127, 76, 0.4);
   } 
   input[type="email"] {
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 10px;
     gap: 6px;
+    box-shadow: 0 0 20px 8px rgba(238, 127, 76, 0.4);
   }
   button[type="submit"] {
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 10px;
     gap: 6px;
+    box-shadow: 0 0 20px 8px rgba(238, 127, 76, 0.4);
   }
