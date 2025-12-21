@@ -1,3 +1,8 @@
+
+![](ui.png)
+
+
+
 <h1 align="center">
   Mailpit - email testing for developers
 </h1>
